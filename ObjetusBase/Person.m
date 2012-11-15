@@ -64,6 +64,7 @@
 
 
 -(void)metodo1_noEntraNiSale {
+    //behaviour
     NSLog(@"nombre de data creada :: %@", self.name);
 }
 
