@@ -24,7 +24,7 @@
 @synthesize age = _age;
 @synthesize name = _name;
 @synthesize height = _height;
- 
+  
 -(id)init
 {
     self = [super init];
@@ -36,25 +36,27 @@
         self.name = @"MK";
         self.height = 0;
         
-
+ 
     }
     
     return self;
 }
 
+
+//designated initializer
 -(id)initWithData:(int)age name:(NSString*)name height:(int)height
 {
     self = [super init];
     
     if (self) {
         
-        
+         
         self.age = age;
         self.name = name;
         self.height = height;
         
  
-        
+ 
         
         
     }
@@ -65,12 +67,28 @@
 
 -(void)metodo1_noEntraNiSale {
     //behaviour
-    NSLog(@"nombre de data creada :: %@", self.name);
+    DLog(@"nombre de data creada :: %@", self.name);
 }
 
 // no declarado en interface .h, no es accesable desde fuera del objeto
 -(void)metodo2_noEntraNiSale {
-    NSLog(@"nombre de data creada :: %@", self.name);
+    DLog(@"nombre de data creada :: %@", self.name);
 }
+
+
+//metodos para getter n setter,
+- (BOOL)isNicePerson //el getter
+{
+    DLog(@"a geteao");
+
+    return self.pasaorNice;
+}
+
+- (void)setNicePerson:(BOOL)nicePerson {
+    DLog(@"a seteao");
+    self.pasaorNice = nicePerson;
+}
+ 
+
 
 @end

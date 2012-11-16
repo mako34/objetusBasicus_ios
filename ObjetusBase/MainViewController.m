@@ -11,6 +11,7 @@
 
 #import "MainViewController.h"
 #import "Person.h"
+#import "Macho.h"
 
 @interface MainViewController ()
 
@@ -29,19 +30,31 @@
     
     [self empiezaOBjetoPerson];
     [self empiezaObjetoPersonConData];
+    
+    //heredao
+    [self empiezaMachoHeredaPersona];
 }
 
 - (void)empiezaOBjetoPerson
 {
-    Person *personObject = [[Person alloc]init];
+    Person *personObject = [[[Person alloc]init]autorelease];
     
 
     
     DLog(@"pinga a empezao con person :: %@", personObject);  
 
-    [personObject release];
+   
     DLog(@"pinga a empezao con person :: %@", personObject.name); //veamos si sirve despues de realease
 
+ 
+    //testeo gette n setter
+    
+    //setter
+    [personObject setNicePerson:NO];
+    
+    //getter
+    DLog(@"ten tu person is nice > :: %d", [personObject isNicePerson]);
+   
 }
 
 
@@ -53,12 +66,32 @@
     DLog(@"pinga a empezao con person n data :: %@", personObject.name);
     
     //llama rutina en objeto
+    
     [personObject metodo1_noEntraNiSale];
     
     
    
 }
 
+//heredao
+- (void)empiezaMachoHeredaPersona
+
+{
+    
+    DLog(@"\n ");
+    //An object inherits various instance variables and methods from its superclass. 
+    
+    Macho *machoObject = [[[Macho alloc]initWithData:33 name:@"macho Man" height:200]autorelease];
+    
+    [machoObject metodo1_noEntraNiSale];
+    
+    machoObject.varonil = YES;
+    
+     
+    [machoObject resultoVaronil];
+    
+    
+}
 
 - (void)didReceiveMemoryWarning
 {

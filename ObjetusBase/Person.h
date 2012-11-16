@@ -16,11 +16,21 @@
     NSString *_name;
     int _height;
     
+    //ensayo esta para ver q hacen los getters n setters
+    
+    BOOL _pasaorNice;
+    
  }
-
+ 
 @property (nonatomic, assign)int age; //por que no le gusta retain?
 @property (nonatomic, retain)NSString *name;
 @property (nonatomic, assign)int height; //por que no le gusta retain?
+
+@property (nonatomic, assign)BOOL pasaorNice; //hecho por ahora con pasaor nice, pero ojo no es para produccion, 
+
+@property (nonatomic, getter = isNicePerson, setter = setNicePerson:) BOOL nicePerson;
+
+//You can specify the getter only, the setter only, or both.
 
 //class methods
 
@@ -30,3 +40,4 @@
 -(void)metodo1_noEntraNiSale;
 
 @end
+ 

@@ -18,6 +18,7 @@
 		9F1EB3041654ABB1007F2CED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F1EB3031654ABB1007F2CED /* Default-568h@2x.png */; };
 		9F1EB3101654ABC0007F2CED /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1EB30F1654ABC0007F2CED /* MainViewController.m */; };
 		9F1EB3141654AC46007F2CED /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1EB3131654AC46007F2CED /* Person.m */; };
+		9FC687D21655A95D00F1C320 /* Macho.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC687D11655A95D00F1C320 /* Macho.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		9F1EB30F1654ABC0007F2CED /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		9F1EB3121654AC46007F2CED /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		9F1EB3131654AC46007F2CED /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		9FC687D01655A95D00F1C320 /* Macho.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macho.h; sourceTree = "<group>"; };
+		9FC687D11655A95D00F1C320 /* Macho.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Macho.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 			children = (
 				9F1EB3121654AC46007F2CED /* Person.h */,
 				9F1EB3131654AC46007F2CED /* Person.m */,
+				9FC687D01655A95D00F1C320 /* Macho.h */,
+				9FC687D11655A95D00F1C320 /* Macho.m */,
 			);
 			name = objetus;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				9F1EB2FE1654ABB1007F2CED /* AppDelegate.m in Sources */,
 				9F1EB3101654ABC0007F2CED /* MainViewController.m in Sources */,
 				9F1EB3141654AC46007F2CED /* Person.m in Sources */,
+				9FC687D21655A95D00F1C320 /* Macho.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
