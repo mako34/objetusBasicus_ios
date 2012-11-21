@@ -13,6 +13,9 @@
 #import "Person.h"
 #import "Macho.h"
 
+//patterns
+#import "Observer.h"
+
 @interface MainViewController ()
 
 @end
@@ -33,6 +36,38 @@
     
     //heredao
     [self empiezaMachoHeredaPersona];
+    
+    [self initUI];
+    
+    //initio observer, veo si cambia en RunTime?
+    
+    Observer *observerObj = [[Observer alloc]init];
+    [observerObj muestroElObservado];
+    
+    //ojo, no boto el objeto! una vez creado queda en memo!
+    //autorelease caga la vaina! duhh
+    //objetos existen en runTime! duh
+}
+
+
+- (void)initUI
+{
+    UIButton *actionButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    actionButton.frame = CGRectMake(100, 100, 90, 30);
+    [actionButton setTitle:@"action" forState:UIControlStateNormal];
+    [actionButton addTarget:self action:@selector(actionButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:actionButton];
+}
+
+
+- (void)actionButtonPressed:(id)sender
+{
+    NSString *pingo = @"pingo";
+    
+    DLog(@"send Notification");
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"Event" object:pingo];
+    
+    
 }
 
 - (void)empiezaOBjetoPerson

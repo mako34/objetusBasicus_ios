@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EA658AF165D032C00495EE7 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA658AE165D032C00495EE7 /* Observer.m */; };
 		9F1EB2EE1654ABB1007F2CED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1EB2ED1654ABB1007F2CED /* UIKit.framework */; };
 		9F1EB2F01654ABB1007F2CED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1EB2EF1654ABB1007F2CED /* Foundation.framework */; };
 		9F1EB2F21654ABB1007F2CED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1EB2F11654ABB1007F2CED /* CoreGraphics.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EA658AD165D032C00495EE7 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		1EA658AE165D032C00495EE7 /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
 		9F1EB2E91654ABB1007F2CED /* ObjetusBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjetusBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1EB2ED1654ABB1007F2CED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9F1EB2EF1654ABB1007F2CED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EA658AB165D031000495EE7 /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				1EA658AD165D032C00495EE7 /* Observer.h */,
+				1EA658AE165D032C00495EE7 /* Observer.m */,
+			);
+			name = Patterns;
+			sourceTree = "<group>";
+		};
 		9F1EB2DE1654ABB1007F2CED = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +103,7 @@
 				9F1EB2FD1654ABB1007F2CED /* AppDelegate.m */,
 				9F1EB30E1654ABC0007F2CED /* MainViewController.h */,
 				9F1EB30F1654ABC0007F2CED /* MainViewController.m */,
+				1EA658AB165D031000495EE7 /* Patterns */,
 				9F1EB3151654AFA1007F2CED /* objetus */,
 				9F1EB2F41654ABB1007F2CED /* Supporting Files */,
 			);
@@ -192,6 +205,7 @@
 				9F1EB3101654ABC0007F2CED /* MainViewController.m in Sources */,
 				9F1EB3141654AC46007F2CED /* Person.m in Sources */,
 				9FC687D21655A95D00F1C320 /* Macho.m in Sources */,
+				1EA658AF165D032C00495EE7 /* Observer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

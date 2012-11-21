@@ -18,3 +18,6 @@ todo:
 . composition
 . obj ass
 
+
+Patterns:
+. Observer, con objeto
