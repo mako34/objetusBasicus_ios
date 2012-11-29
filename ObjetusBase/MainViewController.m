@@ -15,6 +15,10 @@
 
 //patterns
 #import "Observer.h"
+#import "Beverage.h" //Decorator
+#import "HouseBlend.h"
+#import "Mocha.h"
+#import "Whip.h"
 
 @interface MainViewController ()
 
@@ -39,6 +43,8 @@
     
     [self initUI];
     
+    //PATTERNS
+    
     //initio observer, veo si cambia en RunTime?
     
     Observer *observerObj = [[Observer alloc]init];
@@ -47,8 +53,24 @@
     //ojo, no boto el objeto! una vez creado queda en memo!
     //autorelease caga la vaina! duhh
     //objetos existen en runTime! duh
+    
+    [self decorator];
 }
 
+- (void)decorator
+{
+    Beverage *baseBeverage = [[Beverage alloc] init];
+    NSLog(@"base Beverage:: %@ ; for $%.2f", baseBeverage.description, baseBeverage.cost);
+    
+    Beverage *houseBlend = [[HouseBlend alloc]initWithHouseBlend:baseBeverage];
+    
+    Beverage *order2 = [[Mocha alloc]initWithMocha:houseBlend];
+    NSLog(@"\n 2! mocha:: %@ precio $%.2f", order2.description, order2.cost);
+
+
+    Beverage *order3 = [[Mocha alloc]initWithMocha:[[HouseBlend alloc] initWithHouseBlend:baseBeverage]]; //NOTA LA CADENETA DE INICIOS!
+    NSLog(@"\n 3! mocha:: %@ precio $%.2f", order3.description, order3.cost);
+}
 
 - (void)initUI
 {
