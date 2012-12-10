@@ -20,6 +20,8 @@
 #import "Mocha.h"
 #import "Whip.h"
 
+#import "FactoryMethod.h"
+
 @interface MainViewController ()
 
 @end
@@ -55,6 +57,10 @@
     //objetos existen en runTime! duh
     
     [self decorator];
+
+    //Factory Method, o convenience method
+    [self factoryMethod];
+    
 }
 
 - (void)decorator
@@ -81,6 +87,21 @@
     [self.view addSubview:actionButton];
 }
 
+- (void)factoryMethod
+{
+    //piensa en como sirve NSDictionary, y compara
+    // en primera capa, puedo mandar datos a un objeto y con el convenience los puedo "function"
+    
+    
+    NSString *palabraMisteriosa = [FactoryMethod transformString:@"pringamosa"];
+    DLog(@"\ntu respuesta de factory method seria::%@", palabraMisteriosa);
+    
+    NSDictionary *miDicto = [NSDictionary dictionaryWithObject:@"Mirko Krokop" forKey:@"name"];
+    DLog(@"\ntu Dicto :: %@", miDicto);
+    
+    UIView *vista = [FactoryMethod myView];
+    [self.view addSubview:vista];
+}
 
 - (void)actionButtonPressed:(id)sender
 {

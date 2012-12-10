@@ -15,6 +15,7 @@
 		1E1C14A5166620EA0093D1E6 /* Mocha.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1C14A4166620EA0093D1E6 /* Mocha.m */; };
 		1E1C14A816662A310093D1E6 /* Whip.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1C14A716662A310093D1E6 /* Whip.m */; };
 		1EA658AF165D032C00495EE7 /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA658AE165D032C00495EE7 /* Observer.m */; };
+		1EC2CC261675F63800E3D47C /* FactoryMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC2CC251675F63800E3D47C /* FactoryMethod.m */; };
 		9F1EB2EE1654ABB1007F2CED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1EB2ED1654ABB1007F2CED /* UIKit.framework */; };
 		9F1EB2F01654ABB1007F2CED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1EB2EF1654ABB1007F2CED /* Foundation.framework */; };
 		9F1EB2F21654ABB1007F2CED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1EB2F11654ABB1007F2CED /* CoreGraphics.framework */; };
@@ -46,6 +47,8 @@
 		1E1C14A716662A310093D1E6 /* Whip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Whip.m; sourceTree = "<group>"; };
 		1EA658AD165D032C00495EE7 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
 		1EA658AE165D032C00495EE7 /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
+		1EC2CC241675F63800E3D47C /* FactoryMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactoryMethod.h; sourceTree = "<group>"; };
+		1EC2CC251675F63800E3D47C /* FactoryMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactoryMethod.m; sourceTree = "<group>"; };
 		9F1EB2E91654ABB1007F2CED /* ObjetusBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjetusBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1EB2ED1654ABB1007F2CED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9F1EB2EF1654ABB1007F2CED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -105,11 +108,21 @@
 		1EA658AB165D031000495EE7 /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				1EC2CC221675F60300E3D47C /* Method */,
 				1E1C149216661A890093D1E6 /* Decorator */,
 				1EA658AD165D032C00495EE7 /* Observer.h */,
 				1EA658AE165D032C00495EE7 /* Observer.m */,
 			);
 			name = Patterns;
+			sourceTree = "<group>";
+		};
+		1EC2CC221675F60300E3D47C /* Method */ = {
+			isa = PBXGroup;
+			children = (
+				1EC2CC241675F63800E3D47C /* FactoryMethod.h */,
+				1EC2CC251675F63800E3D47C /* FactoryMethod.m */,
+			);
+			name = Method;
 			sourceTree = "<group>";
 		};
 		9F1EB2DE1654ABB1007F2CED = {
@@ -256,6 +269,7 @@
 				1E1C14A216661FF30093D1E6 /* Milk.m in Sources */,
 				1E1C14A5166620EA0093D1E6 /* Mocha.m in Sources */,
 				1E1C14A816662A310093D1E6 /* Whip.m in Sources */,
+				1EC2CC261675F63800E3D47C /* FactoryMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
